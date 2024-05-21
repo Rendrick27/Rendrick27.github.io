@@ -194,15 +194,15 @@
    * Porfolio isotope and filter 2
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+    let portfolioContainer = select('.projects-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.projects-item'
       });
 
-      let portfolioFilters = select('#portfolio-flters2 li', true);
+      let portfolioFilters = select('#projects-flters li', true);
 
-      on('click', '#portfolio-flters2 li', function(e) {
+      on('click', '#projects-flters li', function(e) {
         e.preventDefault();
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
